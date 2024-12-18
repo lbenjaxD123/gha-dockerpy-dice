@@ -1,0 +1,16 @@
+name: 'Dados'
+description: 'Resultado tirada dados'
+inputs:
+  dados:
+    required: true
+    type: 'number'
+    default: 2
+    description: 'Numero de dados a tirar'
+
+outputs:
+  saludo:
+    description: 'Dados'
+runs:
+    using: 'docker'
+    # Si queremos apuntar a una imagen de dockerhub: Ej 'docker://python:3.8'
+    image: 'Dockerfile' 
