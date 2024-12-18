@@ -3,13 +3,15 @@ description: 'Resultado tirada dados'
 inputs:
   dados:
     required: true
-    type: 'number'
+    type: string
     default: 2
     description: 'Numero de dados a tirar'
 
 outputs:
-  saludo:
-    description: 'Dados'
+    dado1:
+        description: 'Dado 1'
+    dado2:
+        description: 'Dado 2'
 runs:
     using: 'docker'
     # Si queremos apuntar a una imagen de dockerhub: Ej 'docker://python:3.8'
