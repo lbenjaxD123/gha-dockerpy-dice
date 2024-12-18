@@ -4,7 +4,7 @@ inputs:
   dados:
     required: true
     type: string
-    default: 2
+    default: '2'
     description: 'Numero de dados a tirar'
 
 outputs:

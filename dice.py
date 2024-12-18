@@ -8,7 +8,7 @@ def set_github_action_output(output_name, output_value):
 def run():
     dice_numbers = os.getenv("INPUT_DADOS",default=2)
     set_github_action_output("dado1",random.randint(1,6))
-    if dice_numbers == 2:
+    if dice_numbers == "2":
         set_github_action_output("dado2",random.randint(1,6))
         
 
